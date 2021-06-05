@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1 align="center">NEXT GEN CALCULATOR</h1>
+    <br>
+    <br>
+    <p>INPUT FIRST NUMBER</p>
+    <input id="first" type="number">
+    <br>
+    <p>INPUT SECOND NUMBER</p>
+    <input id="second" type="number">
+    <br>
+    <br>
+    <button name="plus" onclick="fun1()">+</button>
+    <button name="equal" onclick="fun2()">-</button>
+    <button name="multiply" onclick="fun3()">*</button>
+    <button name="divide" onclick="fun4()">/</button>
+    <button name="equal" onclick="fun5()">=</button>
+    <br>
+    <br>
+    <button onclick="fun6()">C</button>
+    <br>
+    <br>
+    <p>RESULT </p>
+    <p id="result"></p>
+
+
+    <script>
+        var x, y, res;
+
+        function fun1() {
+            x = document.getElementById("first").value;
+            y = document.getElementById("second").value;
+
+            res = (+x) + (+y);
+
+        }
+
+        function fun2() {
+            x = document.getElementById("first").value;
+            y = document.getElementById("second").value;
+
+            res = (+x) - (+y);
+
+        }
+
+        function fun3() {
+            x = document.getElementById("first").value;
+            y = document.getElementById("second").value;
+
+            res = (+x) * (+y);
+
+        }
+
+        function fun4() {
+            x = document.getElementById("first").value;
+            y = document.getElementById("second").value;
+
+            res = (+x) / (+y);
+
+        }
+
+        function fun5() {
+            document.getElementById("result").innerHTML = res;
+        }
+
+        function fun6() {
+            document.getElementById('first').value = '';
+            document.getElementById('second').value = '';
+        }
+    </script>
+</body>
+</body>
+
+</html>
